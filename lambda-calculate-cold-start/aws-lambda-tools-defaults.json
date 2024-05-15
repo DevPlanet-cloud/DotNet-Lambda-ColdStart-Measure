@@ -1,0 +1,27 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "default",
+    "region"      : "ap-southeast-2",
+    "configuration" : "Release",
+    "function-architecture" : "arm64",
+    "function-runtime"      : "dotnet8",
+    "function-memory-size"  : 1024,
+    "function-timeout"      : 73,
+    "function-handler"      : "lambda-calculate-cold-start::lambda_calculate_cold_start.Function::FunctionHandler",
+    "framework"             : "net8.0",
+    "function-name"         : "dotnet-coldstart-measure",
+    "package-type"          : "Zip",
+    "function-role"         : "arn:aws:iam::421626405235:role/lambda_exec_hello-world-dotnet",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "",
+    "image-tag"                : "",
+    "function-description"     : ""
+}
